@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MGM Healthcare</title>
+	<!-- Fav  Icon Link -->
+	<link rel="shortcut icon" type="image/png" href="images/fav.png">
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- themify icons CSS -->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Animations CSS -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/red.css" id="style_theme">
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- morris charts -->
+	<link rel="stylesheet" href="charts/css/morris.css">
+	<!-- jvectormap -->
+	<link rel="stylesheet" href="css/jquery-jvectormap.css">
+	<link rel="stylesheet" href="datatable/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/modernizr.min.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Sidebar -->
+		<nav id="sidebar" class="proclinic-bg">
+			<div class="sidebar-header text-center">
+				<a href="#"><img src="images/logo.png" class="logo" alt="logo" width="150px"></a>
+			</div>
+			<div class="user-panel text-center">
+				<div class="image"> <img src="images/dummy-doctor.png" class="img-circle" alt="User Image"> </div>
+				<div class="info">
+					<h6 class="doctor-name">Dr Chandrasekaran Venkataraman</h6>
+					<p class="doctor-qualification">MBBS. MD. DNB. DM</p>
+					<p class="doctor-position">Director &amp; Clinical Lead</p> <a href="#"><i class="fa fa-circle text-success"></i>
+                            Online</a> </div>
+			</div>
+			<ul class="list-unstyled components">
+				<li class="active">
+					<a href="#nav-patients"> <span class="ti-user"></span> Patient List </a>
+				</li>
+				<li>
+					<a href="#nav-doctors"> <span class="fa fa-user-md"></span> Doctors </a>
+				</li>
+				<li>
+					<a href="#nav-appointment"> <span class="ti-pencil-alt"></span> ICU Appointments </a>
+				</li>
+				<li>
+					<a href="tables.html"> <span class="ti-calendar"></span> Today's Calender </a>
+				</li>
+			</ul>
+		</nav>
+		<!-- /Sidebar -->
+		<!-- Page Content -->
+		<div id="content">
+			<!-- Top Navigation -->
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="responsive-logo">
+						<a href="index.html"><img src="images/logo-dark.png" class="logo" alt="logo" width="100px"></a>
+					</div>
+					<ul class="nav">
+						<li class="nav-item"> <span class="ti-menu" id="sidebarCollapse"></span> </li>
+						<li class="nav-item"> <span title="Fullscreen" class="ti-fullscreen fullscreen"></span> </li>
+						<li class="nav-item">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> <img src="images/dummy-doctor.png" class="user" width="90%" alt="user"> </a>
+							<div class="dropdown-menu proclinic-box-shadow2 profile animated flipInY">
+								<h5>John Willing</h5> <span class="ti-power-off"></span> Logout</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- /Top Navigation -->
+			<!-- Breadcrumb -->
+			<!-- Page Title -->
+			<div class="row no-margin-padding">
+				<div class="col-md-6">
+					<h3 class="block-title"><span class="ti-user" style="
+"></span>Patient List</h3> </div>
+			</div>
+			<!-- /Page Title -->
+			<!-- /Breadcrumb -->
+			<!-- Main Content -->
+			<div class="container-fluid">
+				<div class="row">
+					<!-- Widget Item -->
+					<div class="col-md-12">
+						<div class="widget-area-2 proclinic-box-shadow">
+							<div class="table-responsive mb-3">
+								<table id="tableId" class="table table-bordered table-striped">
+									<thead>
+										<tr>
+											<th class="no-sort">
+												<div class="custom-control custom-checkbox">
+													<input class="custom-control-input" type="checkbox" id="select-all">
+													<label class="custom-control-label" for="select-all"></label>
+												</div>
+											</th>
+											<th>Patient ID</th>
+											<th>Patient Name</th>
+											<th>Age</th>
+											<th>Gender</th>
+											<th>Phone</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="custom-control custom-checkbox">
+													<input class="custom-control-input" type="checkbox" id="1">
+													<label class="custom-control-label" for="1"></label>
+												</div>
+											</td>
+											<td>1</td>
+											<td>Manoj Kumar</td>
+											<td>30</td>
+											<td>Male</td>
+											<td>9876946003</td>
+											<td>
+												<button class="badge badge-success">Completed</button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="custom-control custom-checkbox">
+													<input class="custom-control-input" type="checkbox" id="2">
+													<label class="custom-control-label" for="2"></label>
+												</div>
+											</td>
+											<td>2</td>
+											<td>Riya </td>
+											<td>26</td>
+											<td>Female</td>
+											<td>3423-232-987</td>
+											<td>
+												<button class="badge badge-warning">Click To Next Patient</button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="custom-control custom-checkbox">
+													<input class="custom-control-input" type="checkbox" id="3">
+													<label class="custom-control-label" for="3"></label>
+												</div>
+											</td>
+											<td>3</td>
+											<td>Prashanth</td>
+											<td>46</td>
+											<td>Male</td>
+											<td>9740837100</td>
+											<td>
+												<button class="badge badge-danger">In Queue</button>
+											</td>
+										</tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input class="custom-control-input" type="checkbox" id="6">
+												<label class="custom-control-label" for="6"></label>
+											</div>
+										</td>
+										<td>6</td>
+										<td>Sanjeev</td>
+										<td>46</td>
+										<td>Male</td>
+										<td>9938870309</td>
+										<td>
+											<button class="badge badge-danger">In Queue</button>
+										</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="custom-control custom-checkbox">
+													<input class="custom-control-input" type="checkbox" id="6">
+													<label class="custom-control-label" for="6"></label>
+												</div>
+											</td>
+											<td>6</td>
+											<td>Rubika</td>
+											<td>46</td>
+											<td>Female</td>
+											<td>9173560987</td>
+											<td>
+												<button class="badge badge-danger">In Queue</button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="custom-control custom-checkbox">
+													<input class="custom-control-input" type="checkbox" id="6">
+													<label class="custom-control-label" for="6"></label>
+												</div>
+											</td>
+											<td>6</td>
+											<td>Prem</td>
+											<td>46</td>
+											<td>Male</td>
+											<td>9086487367</td>
+											<td>
+												<button class="badge badge-danger">In Queue</button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="custom-control custom-checkbox">
+													<input class="custom-control-input" type="checkbox" id="6">
+													<label class="custom-control-label" for="6"></label>
+												</div>
+											</td>
+											<td>6</td>
+											<td>Akbar</td>
+											<td>46</td>
+											<td>Male</td>
+											<td>9092876548</td>
+											<td>
+												<button class="badge badge-danger">In Queue</button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="custom-control custom-checkbox">
+													<input class="custom-control-input" type="checkbox" id="6">
+													<label class="custom-control-label" for="6"></label>
+												</div>
+											</td>
+											<td>6</td>
+											<td>Balu</td>
+											<td>46</td>
+											<td>Male</td>
+											<td>9704875978</td>
+											<td>
+												<button class="badge badge-danger">In Queue</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- /Widget Item -->
+				</div>
+			</div>
+			<!-- /Main Content -->
+		</div>
+		<!-- /Page Content -->
+	</div>
+	<!-- Back to Top -->
+	<a id="back-to-top" href="#" class="back-to-top"> <span class="ti-angle-up"></span> </a>
+	<!-- /Back to Top -->
+	<!-- Jquery Library-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!-- Popper Library-->
+	<script src="js/popper.min.js"></script>
+	<!-- Bootstrap Library-->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Datatable  -->
+	<script src="datatable/jquery.dataTables.min.js"></script>
+	<script src="datatable/dataTables.bootstrap4.min.js"></script>
+	<!-- Custom Script-->
+	<script src="js/custom.js"></script>
+	<script src="js/custom-datatables.js"></script>
+</body>
+
+</html>
